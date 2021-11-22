@@ -1,0 +1,11 @@
+{
+  "name": "social-authentication-notes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "C. Lewis <ctj.lewis@icloud.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "yarn pdf",
+    "pdf": "sed 's,-\\{80\\},\\\\pagebreak,g' README.md | pandoc --pdf-engine=xelatex -o README.pdf"
+  }
+}
